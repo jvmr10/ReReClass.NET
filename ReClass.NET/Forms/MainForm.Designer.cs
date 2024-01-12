@@ -77,6 +77,7 @@ namespace ReClassNET.Forms
 			this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
 			this.createClassFromNodesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+			this.initClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.dissectNodesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
 			this.searchForEqualValuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -382,6 +383,7 @@ namespace ReClassNET.Forms
             this.toolStripSeparator8,
             this.createClassFromNodesToolStripMenuItem,
             this.toolStripSeparator13,
+            this.initClassToolStripMenuItem,
             this.dissectNodesToolStripMenuItem,
             this.toolStripSeparator9,
             this.searchForEqualValuesToolStripMenuItem,
@@ -402,7 +404,7 @@ namespace ReClassNET.Forms
             this.showCodeOfClassToolStripMenuItem,
             this.shrinkClassToolStripMenuItem});
 			this.selectedNodeContextMenuStrip.Name = "selectedNodeContextMenuStrip";
-			this.selectedNodeContextMenuStrip.Size = new System.Drawing.Size(270, 410);
+			this.selectedNodeContextMenuStrip.Size = new System.Drawing.Size(270, 454);
 			this.selectedNodeContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.selectedNodeContextMenuStrip_Opening);
 			// 
 			// changeTypeToolStripMenuItem
@@ -603,6 +605,16 @@ namespace ReClassNET.Forms
 			// 
 			this.toolStripSeparator13.Name = "toolStripSeparator13";
 			this.toolStripSeparator13.Size = new System.Drawing.Size(266, 6);
+			// 
+			// initClassToolStripMenuItem
+			// 
+			this.initClassToolStripMenuItem.Image = global::ReClassNET.Properties.Resources.B16x16_Button_AutoName;
+			this.initClassToolStripMenuItem.Name = "initClassToolStripMenuItem";
+			this.initClassToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.N)));
+			this.initClassToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+			this.initClassToolStripMenuItem.Text = "Init Class from RTTI";
+			this.initClassToolStripMenuItem.Click += new System.EventHandler(this.initClassToolStripMenuItem_Click);
 			// 
 			// dissectNodesToolStripMenuItem
 			// 
@@ -1377,6 +1389,7 @@ namespace ReClassNET.Forms
 			this.Controls.Add(this.toolStrip);
 			this.Controls.Add(this.statusStrip);
 			this.Controls.Add(this.mainMenuStrip);
+			this.KeyPreview = true;
 			this.MainMenuStrip = this.mainMenuStrip;
 			this.MinimumSize = new System.Drawing.Size(200, 100);
 			this.Name = "MainForm";
@@ -1542,6 +1555,6 @@ namespace ReClassNET.Forms
 		private System.Windows.Forms.ToolStripMenuItem showEnumsToolStripMenuItem;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator23;
 		private System.Windows.Forms.ToolStripMenuItem isLittleEndianToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem initClassToolStripMenuItem;
 	}
 }
-
